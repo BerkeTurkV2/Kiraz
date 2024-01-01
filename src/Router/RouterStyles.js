@@ -13,7 +13,7 @@ export default StyleSheet.create({
     },
     logo: {
         width: 50,
-        height: 50
+        height: 50,
     },
     tabBar: {
         height: 60,
