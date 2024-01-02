@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from "./CardStyles";
 
 const categoryImages = {
@@ -20,12 +20,12 @@ const categoryImages = {
 
 function Card({categoryImage,categoryName}) {
     return (
-        <View style={styles.container}>
-            <View style={styles.box} >
+        <TouchableOpacity style={styles.container}>
+            <View style={styles.box}>
                 <Image style={styles.image} source={categoryImages[categoryImage]} resizeMode='contain' />
             </View>
             <Text style={styles.categoryName}> {categoryName} </Text>
-        </View>
+        </TouchableOpacity>
     )
 };
 
