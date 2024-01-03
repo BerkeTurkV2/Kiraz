@@ -5,6 +5,8 @@ import Colors from '../Assets/Colors/Colors';
 import styles from "./RouterStyles";
 
 import Main from '../Pages/Main/Main';
+import Products from '../Pages/Products/Products';
+
 import Search from '../Pages/Search/Search';
 import Cart from '../Pages/Cart/Cart';
 import Profile from '../Pages/Profile/Profile';
@@ -30,6 +32,9 @@ const MainStack = () => {
                         <Text style={styles.title}>Kiraz Market</Text>
                     </View>
                 ),
+            }} />
+            <Stack.Screen name="Products" component={Products} options={{
+                title: "Ürünler",
             }} />
         </Stack.Navigator>
     )

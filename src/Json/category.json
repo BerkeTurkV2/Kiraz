@@ -7,7 +7,93 @@
     {
         "id": 2,
         "image": "c2",
-        "categoryName": "Su & İçecek"
+        "categoryName": "Su & İçecek",
+        "subCategory" : [
+            {
+                "id" : 1,
+                "subCategoryName" : "Hepsi"
+            },
+            {
+                "id" : 2,
+                "subCategoryName" : "Su"
+            },
+            {
+                "id" : 3,
+                "subCategoryName" : "Gazlı İçeçek"
+            },
+            {
+                "id" : 4,
+                "subCategoryName" : "Gazsız İçeçek"
+            },
+            {
+                "id" : 5,
+                "subCategoryName" : "Maden Suyu"
+            },
+            {
+                "id" : 6,
+                "subCategoryName" : "Çay & Kahve"
+            },
+            {
+                "id" : 7,
+                "subCategoryName" : "Enerji İçecekleri"
+            }
+        ],
+        "products" : [
+            {
+                "id" : 201,
+                "subCategoryId" : 2,
+                "productImage" : "p1",
+                "productName" : "a"
+            },
+            {
+                "id" : 202,
+                "subCategoryId" : 2,
+                "productImage" : "p2",
+                "productName" : "a"
+            },
+            {
+                "id" : 203,
+                "subCategoryId" : 2,
+                "productImage" : "p3",
+                "productName" : "a"
+            },
+            {
+                "id" : 204,
+                "subCategoryId" : 2,
+                "productImage" : "p4",
+                "productName" : "a"
+            },
+            {
+                "id" : 205,
+                "subCategoryId" : 2,
+                "productImage" : "p5",
+                "productName" : "a"
+            },
+            {
+                "id" : 306,
+                "subCategoryId" : 3,
+                "productImage" : "p6",
+                "productName" : "b"
+            },
+            {
+                "id" : 307,
+                "subCategoryId" : 3,
+                "productImage" : "p7",
+                "productName" : "b"
+            },
+            {
+                "id" : 308,
+                "subCategoryId" : 3,
+                "productImage" : "p8",
+                "productName" : "b"
+            },
+            {
+                "id" : 309,
+                "subCategoryId" : 3,
+                "productImage" : "p9",
+                "productName" : "b"
+            }
+        ]
     },
     {
         "id": 3,

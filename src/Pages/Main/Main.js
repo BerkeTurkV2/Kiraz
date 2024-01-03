@@ -4,10 +4,14 @@ import Card from '../../Components/CategoriesCard/Card';
 import categoryData from "../../Json/category.json";
 import styles from "./MainStyles";
 
-function Main() {
+function Main({navigation}) {
+
+    function goToProducts(item){
+        navigation.navigate("Products", {item});
+    };
 
     const renderItem = ({ item }) => (
-        <Card categoryImage={item.image} categoryName={item.categoryName} />
+        <Card categoryImage={item.image} categoryName={item.categoryName} onPress={() => goToProducts(item)} />
     );
 
     return (

@@ -18,11 +18,11 @@ const categoryImages = {
     c13: require("../../Assets/Contents/c13.png"),
 };
 
-function Card({categoryImage,categoryName}) {
+function Card({categoryImage,categoryName, onPress}) {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <View style={styles.box}>
-                <Image style={styles.image} source={categoryImages[categoryImage]} resizeMode='contain' />
+                <Image style={styles.image} source={categoryImages[categoryImage]} resizeMode='stretch' />
             </View>
             <Text style={styles.categoryName}> {categoryName} </Text>
         </TouchableOpacity>
